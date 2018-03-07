@@ -1,6 +1,6 @@
 # restaurant_searcher
 
-This application shows you the Restaurants of a city you search and then gives you the functionality to add that restaurant to your top 10 favourites list.We can also search the restaurants based on the cuisine type and food items.
+This application shows you the Restaurants of a city you search and then gives you the functionality to add that restaurant to your top 10 favourites list.We can also search the restaurants based on the cuisine type and food items.The customer also has the flexibility to remove the old favourites and replace them with new ones.
 
 ## Getting Started
 
