@@ -43,8 +43,10 @@ public class Display_favourites extends HttpServlet {
 		{
 			PrintWriter out = response.getWriter();
 			String favourites="";
-
 			JSONParser parser = new JSONParser(); 
+			/*
+			 * The Favourites Json file is read using filereader
+			 */
 			JSONArray a = (JSONArray) parser.parse(new FileReader("/home/sapient/Documents/Favourites.json"));
 			ArrayList<String> list=new ArrayList<String>();
 			for (Object o : a)
@@ -59,6 +61,9 @@ public class Display_favourites extends HttpServlet {
 				favourites+="qqqq";
 
 			}
+			/*
+			 * The Modified Json file is now sent back to the frontend for processing
+			 */
 			out.print(favourites);
 		}
 		catch(Exception e) {

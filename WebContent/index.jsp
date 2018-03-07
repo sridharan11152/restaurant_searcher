@@ -18,13 +18,14 @@
 </div>
 <div class="container">
   <div class="row">
-  <div class="col-sm-12">
-  
-  <input type="text" name="first_name" id="inp"/>
-  <button onclick="getresult()">Go</button>
-  <script type="text/javascript" src="index1.js"></script>
-  <p id ="msg"></p>
-  </div></div></div>
+   <div class="col-sm-12">
+    <input type="text" name="first_name" id="inp"/>
+     <button onclick="getresult()">Go
+     </button><script type="text/javascript" src="index1.js">
+              </script><p id ="msg"></p>
+   </div>
+  </div>
+</div>
 
 			
 				

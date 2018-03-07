@@ -37,7 +37,7 @@
 					<button onclick="get_favourites()">View favourites</button>
 				</center>
 				<p></p>
-				<p id="fa" style="font-family: 'Cookie', cursive"></p>
+				<div id="fa" style="font-family: 'Cookie', cursive"></div>
 
 			</div>
 		</div>
