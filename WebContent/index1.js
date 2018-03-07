@@ -40,13 +40,13 @@ let renderSearch=function(data){
 /* On clicking the "Add to favourites" button,an ajax call is made to the "ajaxcontroller"
   servlet which adds the corresponding restaurant to the favourites list*/
  
-    
-	document.getElementById("0").addEventListener("click", function(){
+    for (var j=0;j<19;j++){
+	document.getElementById(j).addEventListener("click", function(){
 		$.ajax({
 			type :'POST',
 			data :{
-				obj:data.restaurants[0].restaurant.name,
-				id :data.restaurants[0].restaurant.location.address
+				obj:data.restaurants[j].restaurant.name,
+				id :data.restaurants[j].restaurant.location.address
 			},
 			url  :'ajaxcontroller',
 			success: function(result){
@@ -56,277 +56,8 @@ let renderSearch=function(data){
 
 
 	})
-	document.getElementById("1").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[1].restaurant.name,
-				id :data.restaurants[1].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-	document.getElementById("2").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[2].restaurant.name,
-				id :data.restaurants[2].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-	document.getElementById("3").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[3].restaurant.name,
-				id :data.restaurants[3].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-	document.getElementById("4").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[4].restaurant.name,
-				id :data.restaurants[4].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-	document.getElementById("5").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[5].restaurant.name,
-				id :data.restaurants[5].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-	document.getElementById("6").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[6].restaurant.name,
-				id :data.restaurants[6].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-	document.getElementById("7").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[7].restaurant.name,
-				id :data.restaurants[7].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-	document.getElementById("8").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[8].restaurant.name,
-				id :data.restaurants[8].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-	document.getElementById("9").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[9].restaurant.name,
-				id :data.restaurants[9].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-	document.getElementById("10").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[10].restaurant.name,
-				id :data.restaurants[10].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-	document.getElementById("11").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[11].restaurant.name,
-				id :data.restaurants[11].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-	document.getElementById("12").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[12].restaurant.name,
-				id :data.restaurants[12].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-	document.getElementById("13").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[13].restaurant.name,
-				id :data.restaurants[13].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-	document.getElementById("14").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[14].restaurant.name,
-				id :data.restaurants[14].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-	document.getElementById("15").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[15].restaurant.name,
-				id :data.restaurants[15].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-	document.getElementById("16").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[16].restaurant.name,
-				id :data.restaurants[16].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-	document.getElementById("17").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[17].restaurant.name,
-				id :data.restaurants[17].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-	document.getElementById("18").addEventListener("click", function(){
-		$.ajax({
-			type :'POST',
-			data :{
-				obj:data.restaurants[18].restaurant.name,
-				id :data.restaurants[18].restaurant.location.address
-			},
-			url  :'ajaxcontroller',
-			success: function(result){
-				$('#result1').html(result);
-			}
-		});
-
-
-	})
-
+    }
+	
 }
 
 
@@ -360,7 +91,7 @@ function get_favourites(){
 			}
 			document.getElementById('fa').innerHTML=htmlText;
 		
-
+            
 			document.getElementById("0").addEventListener("click", function(){
 				$.ajax({
 					type :'POST',
